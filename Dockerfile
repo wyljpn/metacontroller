@@ -7,8 +7,9 @@ RUN curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 COPY . /go/src/metacontroller.app/
 WORKDIR /go/src/metacontroller.app/
 RUN go mod init
+RUN go mod tidy
 #RUN go mod vendor
-RUN dep ensure
+#RUN dep ensure
 RUN go install -mod=mod
 
 #FROM debian:stretch-slim
