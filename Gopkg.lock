@@ -547,7 +547,7 @@
   packages = ["pkg/util/pointer"]
   pruneopts = "UT"
   revision = "a4529464e4629c21224b3d52edfe0ea91b072862"
-  version = "v1.11.3"
+  version = "v1.13.12"
 
 [solve-meta]
   analyzer-name = "dep"
